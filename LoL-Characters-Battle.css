@@ -1,0 +1,111 @@
+body {
+  text-align: center;
+  margin: 0px 10px;
+}
+.topPart {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: space-between;
+  width: 100%;
+}
+.topPart table,
+.topPart tr,
+.topPart td {
+  border: none;
+}
+.topPart tr,
+.topPart td {
+  height: 32px;
+  padding: 0px;
+}
+#hp1,
+#hp2 {
+  border: 1px black solid;
+  height: 30px;
+}
+#currentHp1,
+#currentHp2 {
+  width: 100%;
+  height: 100%;
+  background-color: greenyellow;
+}
+#hp1Gage,
+#hp2Gage {
+  position: relative;
+}
+#money1,
+#money2 {
+  text-align: center;
+}
+.downPart {
+  border: 10px black solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: 110px 750px 110px;
+  justify-content: space-between;
+  align-items: center;
+}
+#shop1,
+#shop2 {
+  width: 100px;
+  height: 600px;
+  border: 5px black solid;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#shop1 img,
+#shop2 img {
+  width: 90px;
+  height: 80px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+.explainCharacter {
+  font-size: 10px;
+  height: 30px;
+}
+table,
+tr,
+td {
+  border: 3px black solid;
+  padding: 0px;
+}
+td {
+  width: 70px;
+  height: 70px;
+}
+#gameBoard {
+  margin-top: 70px;
+}
+#gameBoard img {
+  width: 70px;
+  height: 70px;
+}
+#gameBoard .character1 {
+  border: 1px red solid;
+}
+#gameBoard .character2 {
+  border: 1px blue solid;
+}
+#nextTurn {
+  all: unset;
+  background-color: red;
+  color: ivory;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 20px 50px;
+  margin: 20px 50px;
+}
+#enlargeIncome1,
+#enlargeIncome2 {
+  all: unset;
+  background-color: skyblue;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}

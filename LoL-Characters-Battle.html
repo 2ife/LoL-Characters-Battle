@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="LoL-Characters-Battle.css" />
+    <title>롤 캐릭터 배틀</title>
+  </head>
+  <body>
+    <h1>&#10094;LoL Characters Battle&#10095;</h1>
+    <div class="topPart">
+      <table id="firstPlayer">
+        <tr>
+          <td>HP&nbsp</td>
+          <td>
+            <div id="hp1">
+              <div id="currentHp1"><div id="hp1Gage">10000</div></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>돈&nbsp</td>
+          <td><input id="money1" type="text" value="300" readonly /></td>
+        </tr>
+      </table>
+      <h2>Round</h2>
+      <table id="secondPlayer">
+        <tr>
+          <td>
+            HP&nbsp
+          </td>
+          <td>
+            <div id="hp2">
+              <div id="currentHp2"><div id="hp2Gage">10000</div></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>돈&nbsp</td>
+          <td>
+            <input id="money2" type="text" value="300" readonly />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="downPart">
+      <label for="shop1">
+        <div id="shop1">
+          <div class="firstPlayerCharacter">
+            <img
+              draggable="true"
+              id="firstPlayerCharacter1"
+              class="character1"
+              src="aatrox.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            1. 가격: 1000 <br />
+            파워: 13000
+          </div>
+          <div class="firstPlayerCharacter">
+            <img
+              draggable="true"
+              id="firstPlayerCharacter2"
+              class="character1"
+              src="aurelion sol.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            2. 가격: 500 <br />
+            파워: 6000
+          </div>
+          <div class="firstPlayerCharacter">
+            <img
+              draggable="true"
+              id="firstPlayerCharacter3"
+              class="character1"
+              src="aphelios.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            3. 가격: 300 <br />
+            파워: 3500
+          </div>
+          <div class="firstPlayerCharacter">
+            <img
+              draggable="true"
+              id="firstPlayerCharacter4"
+              class="character1"
+              src="corki.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            4. 가격: 150 <br />
+            파워: 1600
+          </div>
+          <div class="firstPlayerCharacter">
+            <img
+              draggable="true"
+              id="firstPlayerCharacter5"
+              class="character1"
+              src="akali.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            5. 가격: 100 <br />
+            파워: 1000
+          </div>
+        </div>
+        상점</label
+      >
+      <div>
+        <table id="gameBoard">
+          <tr>
+            <td class="enterZone1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="enterZone2"></td>
+          </tr>
+          <tr>
+            <td class="enterZone1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="enterZone2"></td>
+          </tr>
+          <tr>
+            <td class="enterZone1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="enterZone2"></td>
+          </tr>
+          <tr>
+            <td class="enterZone1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="enterZone2"></td>
+          </tr>
+          <tr>
+            <td class="enterZone1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="enterZone2"></td>
+          </tr>
+        </table>
+        <div id="buttonSet">
+          <button id="enlargeIncome1">수입 증가(1P)</button>
+          <button id="nextTurn">전투!</button>
+          <button id="enlargeIncome2">수입 증가(2P)</button>
+        </div>
+      </div>
+      <label for="shop2">
+        <div id="shop2">
+          <div class="secondPlayerCharacter">
+            <img
+              draggable="true"
+              id="secondPlayerCharacter1"
+              class="character2"
+              src="aatrox.jpg"
+              alt=""
+            />
+          </div>
+          <div class="explainCharacter">
+            가격: 1000 <br />
+            파워: 13000
+          </div>
+          <div class="secondPlayerCharacter">
+            <img
+              draggable="true"
+              id="secondPlayerCharacter2"
+              class="character2"
+              src="aurelion sol.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            가격: 500 <br />
+            파워: 6000
+          </div>
+          <div class="secondPlayerCharacter">
+            <img
+              draggable="true"
+              id="secondPlayerCharacter3"
+              class="character2"
+              src="aphelios.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            가격: 300 <br />
+            파워: 3500
+          </div>
+          <div class="secondPlayerCharacter">
+            <img
+              draggable="true"
+              id="secondPlayerCharacter4"
+              class="character2"
+              src="corki.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            가격: 150 <br />
+            파워: 1600
+          </div>
+          <div class="secondPlayerCharacter">
+            <img
+              draggable="true"
+              id="secondPlayerCharacter5"
+              class="character2"
+              src="akali.jpg"
+            />
+          </div>
+          <div class="explainCharacter">
+            가격: 100 <br />
+            파워: 1000
+          </div>
+        </div>
+        상점</label
+      >
+    </div>
+    <script src="LoL-Characters-Battle.js"></script>
+  </body>
+</html>
